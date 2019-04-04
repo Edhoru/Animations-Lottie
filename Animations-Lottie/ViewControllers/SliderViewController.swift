@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SliderViewController.swift
 //  Animations-Lottie
 //
 //  Created by Alberto Huerdo on 4/4/19.
@@ -8,13 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SliderViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 
-
 }
-
