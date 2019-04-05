@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46AE9F6B2256F2850027A276 /* breath_brain.json in Resources */ = {isa = PBXBuildFile; fileRef = 46AE9F6A2256F2850027A276 /* breath_brain.json */; };
 		46F20B7A2256B92F00C414DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F20B792256B92F00C414DE /* AppDelegate.swift */; };
 		46F20B7C2256B92F00C414DE /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F20B7B2256B92F00C414DE /* ListViewController.swift */; };
 		46F20B7F2256B92F00C414DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46F20B7D2256B92F00C414DE /* Main.storyboard */; };
@@ -14,12 +15,13 @@
 		46F20B842256B93400C414DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46F20B822256B93400C414DE /* LaunchScreen.storyboard */; };
 		46F20B8D2256BC3000C414DE /* ListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F20B8C2256BC3000C414DE /* ListDataSource.swift */; };
 		46F20B8F2256BD7300C414DE /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F20B8E2256BD7300C414DE /* SliderViewController.swift */; };
-		46F20B922256BF5900C414DE /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F20B912256BF5900C414DE /* Animation.swift */; };
+		46F20B922256BF5900C414DE /* AnimationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F20B912256BF5900C414DE /* AnimationInfo.swift */; };
 		46F20B952256C36600C414DE /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F20B942256C36600C414DE /* ListCollectionViewCell.swift */; };
 		537DECB7FE6E1F4C16C284D7 /* Pods_Animations_Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67034D09697CE1C688B98312 /* Pods_Animations_Lottie.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46AE9F6A2256F2850027A276 /* breath_brain.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = breath_brain.json; sourceTree = "<group>"; };
 		46F20B762256B92F00C414DE /* Animations-Lottie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animations-Lottie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F20B792256B92F00C414DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46F20B7B2256B92F00C414DE /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -29,7 +31,7 @@
 		46F20B852256B93400C414DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46F20B8C2256BC3000C414DE /* ListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataSource.swift; sourceTree = "<group>"; };
 		46F20B8E2256BD7300C414DE /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
-		46F20B912256BF5900C414DE /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		46F20B912256BF5900C414DE /* AnimationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationInfo.swift; sourceTree = "<group>"; };
 		46F20B942256C36600C414DE /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
 		67034D09697CE1C688B98312 /* Pods_Animations_Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Animations_Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72CDAA2820D44EEB98835925 /* Pods-Animations-Lottie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animations-Lottie.debug.xcconfig"; path = "Target Support Files/Pods-Animations-Lottie/Pods-Animations-Lottie.debug.xcconfig"; sourceTree = "<group>"; };
@@ -62,8 +64,15 @@
 				72CDAA2820D44EEB98835925 /* Pods-Animations-Lottie.debug.xcconfig */,
 				CA6C75AD6EA9DF7E2A7FE38D /* Pods-Animations-Lottie.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		46AE9F652256D3060027A276 /* AnimationFiles */ = {
+			isa = PBXGroup;
+			children = (
+				46AE9F6A2256F2850027A276 /* breath_brain.json */,
+			);
+			path = AnimationFiles;
 			sourceTree = "<group>";
 		};
 		46F20B6D2256B92F00C414DE = {
@@ -91,6 +100,7 @@
 				46F20B932256BF6200C414DE /* Models */,
 				46F20B8B2256BC1C00C414DE /* List */,
 				46F20B902256BD7B00C414DE /* ViewControllers */,
+				46AE9F652256D3060027A276 /* AnimationFiles */,
 				46F20B7D2256B92F00C414DE /* Main.storyboard */,
 				46F20B802256B93400C414DE /* Assets.xcassets */,
 				46F20B822256B93400C414DE /* LaunchScreen.storyboard */,
@@ -120,7 +130,7 @@
 		46F20B932256BF6200C414DE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				46F20B912256BF5900C414DE /* Animation.swift */,
+				46F20B912256BF5900C414DE /* AnimationInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -185,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46AE9F6B2256F2850027A276 /* breath_brain.json in Resources */,
 				46F20B842256B93400C414DE /* LaunchScreen.storyboard in Resources */,
 				46F20B812256B93400C414DE /* Assets.xcassets in Resources */,
 				46F20B7F2256B92F00C414DE /* Main.storyboard in Resources */,
@@ -249,7 +260,7 @@
 				46F20B7C2256B92F00C414DE /* ListViewController.swift in Sources */,
 				46F20B8D2256BC3000C414DE /* ListDataSource.swift in Sources */,
 				46F20B7A2256B92F00C414DE /* AppDelegate.swift in Sources */,
-				46F20B922256BF5900C414DE /* Animation.swift in Sources */,
+				46F20B922256BF5900C414DE /* AnimationInfo.swift in Sources */,
 				46F20B8F2256BD7300C414DE /* SliderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

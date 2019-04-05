@@ -10,9 +10,9 @@ import Foundation
 
 class ListDataSource {
     
-    static func getAnimations() -> [Animation] {
-        let animations = [Animation(name: "Breath - Brain", file: "breath_brain", presenter: .slider),
-                          Animation(name: "Vertical Arrow", file: "arrow_vertical")]
+    static func getAnimations() -> [AnimationInfo] {
+        let animations = [AnimationInfo(name: "Breath - Brain", file: "breath_brain", presenter: .slider),
+                          AnimationInfo(name: "Vertical Arrow", file: "arrow_vertical")]
         
         return animations
     }

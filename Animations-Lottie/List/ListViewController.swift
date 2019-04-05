@@ -11,7 +11,7 @@ import UIKit
 class ListViewController: UIViewController {
     
     //Properties
-    var animations: [Animation] = []
+    var animations: [AnimationInfo] = []
     
     //UI
     var collectionView: UICollectionView = {
@@ -40,6 +40,8 @@ class ListViewController: UIViewController {
     }
     
     private func setupUI() {
+        self.view.backgroundColor = .red
+        
         view.addSubview(collectionView)
         
         NSLayoutConstraint.activate([
@@ -82,7 +84,13 @@ extension ListViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let animation = animations[indexPath.row]
-        print(animation)
+        switch animation.presenter {
+        case .base:
+            print(animation)
+        case .slider:
+            let sliderViewController = SliderViewController(animation: animation)
+            self.navigationController?.pushViewController(sliderViewController, animated: true)
+        }
     }
     
 }

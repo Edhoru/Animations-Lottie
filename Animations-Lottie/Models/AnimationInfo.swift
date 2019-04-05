@@ -13,7 +13,7 @@ enum Presenter {
     case base
 }
 
-struct Animation {
+struct AnimationInfo {
     let name: String
     let file: String
     let presenter: Presenter
