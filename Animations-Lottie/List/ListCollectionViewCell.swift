@@ -14,19 +14,20 @@ class ListCollectionViewCell: UICollectionViewCell {
     var titleLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.backgroundColor = .white
         return label
     }()
     
     func setup(title: String) {
-        backgroundColor = .white
+        backgroundColor = .lightGray
         
         addSubview(titleLabel)
         
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: topAnchor),
-            titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
-            titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor)
+            titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
+            titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
+            titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -1)
             ])
         
         titleLabel.text = title

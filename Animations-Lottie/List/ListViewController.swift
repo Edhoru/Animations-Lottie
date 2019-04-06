@@ -21,7 +21,7 @@ class ListViewController: UIViewController {
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.backgroundColor = .lightGray
+        collectionView.backgroundColor = .white
         collectionView.register(ListCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         return collectionView
     }()
@@ -40,14 +40,15 @@ class ListViewController: UIViewController {
     }
     
     private func setupUI() {
-        self.view.backgroundColor = .red
+        self.title = "Animations"
+        self.view.backgroundColor = .white
         
         view.addSubview(collectionView)
         
         NSLayoutConstraint.activate([
             collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            collectionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
-            collectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            collectionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
+            collectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
             collectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
             ])
         setupProperties()
@@ -98,7 +99,7 @@ extension ListViewController: UICollectionViewDelegate {
 extension ListViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.bounds.width, height: 52)
+        return CGSize(width: collectionView.bounds.width, height: 52)
     }
     
 }
