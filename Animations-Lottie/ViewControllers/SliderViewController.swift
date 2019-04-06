@@ -21,15 +21,15 @@ class SliderViewController: UIViewController {
         init(_ value: Float) {
             switch value {
             case 0.0...0.20:
-                self = .great
+                self = .rough
             case 0.21...0.40:
-                self = .good
+                self = .poor
             case 0.41...0.60:
                 self = .meh
             case 0.61...0.80:
-                self = .poor
+                self = .good
             case 0.81...1.0:
-                self = .rough
+                self = .great
             default:
                 self = .meh
             }
@@ -137,7 +137,7 @@ class SliderViewController: UIViewController {
     @objc func changeValue(_ sender: UISlider) {
         animationView.animationSpeed = 8.0
         
-        let animationProgressTime = AnimationProgressTime(Double(sender.value) )
+        let animationProgressTime = AnimationProgressTime(Double(1-sender.value) )
         animationView.play(toProgress: animationProgressTime)
         
         setState(sender.value)
