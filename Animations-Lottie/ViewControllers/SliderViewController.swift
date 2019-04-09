@@ -72,7 +72,6 @@ class SliderViewController: UIViewController {
         self.animation = animation
         
         super.init(nibName: nil, bundle: nil)
-        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
     }
     
     required init?(coder aDecoder: NSCoder) {

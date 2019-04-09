@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Lottie
 
 enum Presenter {
     case slider
@@ -17,10 +18,15 @@ struct AnimationInfo {
     let name: String
     let file: String
     let presenter: Presenter
+    let speed: CGFloat
+    var loop: LottieLoopMode
     
-    init(name: String, file: String, presenter: Presenter = .base) {
+    init(name: String, file: String, presenter: Presenter = .base, speed: CGFloat, loop: LottieLoopMode = .playOnce) {
         self.name = name
         self.file = file
         self.presenter = presenter
+        self.speed = speed
+        self.loop = loop
     }
+    
 }

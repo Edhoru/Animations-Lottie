@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46939BB222594B3700F703BA /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46939BB122594B3700F703BA /* ButtonViewController.swift */; };
+		46939BB4225C1DEC00F703BA /* arrow_vertical.json in Resources */ = {isa = PBXBuildFile; fileRef = 46939BB3225C1DEC00F703BA /* arrow_vertical.json */; };
+		46939BB8225C224800F703BA /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46939BB7225C224800F703BA /* AnimationViewController.swift */; };
+		46939BBA225C2AB200F703BA /* heart.json in Resources */ = {isa = PBXBuildFile; fileRef = 46939BB9225C2AB200F703BA /* heart.json */; };
 		46AE9F6B2256F2850027A276 /* breath_brain.json in Resources */ = {isa = PBXBuildFile; fileRef = 46AE9F6A2256F2850027A276 /* breath_brain.json */; };
 		46F20B7A2256B92F00C414DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F20B792256B92F00C414DE /* AppDelegate.swift */; };
 		46F20B7C2256B92F00C414DE /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F20B7B2256B92F00C414DE /* ListViewController.swift */; };
@@ -21,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46939BB122594B3700F703BA /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
+		46939BB3225C1DEC00F703BA /* arrow_vertical.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = arrow_vertical.json; sourceTree = "<group>"; };
+		46939BB7225C224800F703BA /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		46939BB9225C2AB200F703BA /* heart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heart.json; sourceTree = "<group>"; };
 		46AE9F6A2256F2850027A276 /* breath_brain.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = breath_brain.json; sourceTree = "<group>"; };
 		46F20B762256B92F00C414DE /* Animations-Lottie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animations-Lottie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F20B792256B92F00C414DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,7 +78,9 @@
 		46AE9F652256D3060027A276 /* AnimationFiles */ = {
 			isa = PBXGroup;
 			children = (
+				46939BB3225C1DEC00F703BA /* arrow_vertical.json */,
 				46AE9F6A2256F2850027A276 /* breath_brain.json */,
+				46939BB9225C2AB200F703BA /* heart.json */,
 			);
 			path = AnimationFiles;
 			sourceTree = "<group>";
@@ -123,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				46F20B8E2256BD7300C414DE /* SliderViewController.swift */,
+				46939BB122594B3700F703BA /* ButtonViewController.swift */,
+				46939BB7225C224800F703BA /* AnimationViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -197,6 +209,8 @@
 			files = (
 				46AE9F6B2256F2850027A276 /* breath_brain.json in Resources */,
 				46F20B842256B93400C414DE /* LaunchScreen.storyboard in Resources */,
+				46939BBA225C2AB200F703BA /* heart.json in Resources */,
+				46939BB4225C1DEC00F703BA /* arrow_vertical.json in Resources */,
 				46F20B812256B93400C414DE /* Assets.xcassets in Resources */,
 				46F20B7F2256B92F00C414DE /* Main.storyboard in Resources */,
 			);
@@ -257,11 +271,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				46F20B952256C36600C414DE /* ListCollectionViewCell.swift in Sources */,
+				46939BB222594B3700F703BA /* ButtonViewController.swift in Sources */,
 				46F20B7C2256B92F00C414DE /* ListViewController.swift in Sources */,
 				46F20B8D2256BC3000C414DE /* ListDataSource.swift in Sources */,
 				46F20B7A2256B92F00C414DE /* AppDelegate.swift in Sources */,
 				46F20B922256BF5900C414DE /* AnimationInfo.swift in Sources */,
 				46F20B8F2256BD7300C414DE /* SliderViewController.swift in Sources */,
+				46939BB8225C224800F703BA /* AnimationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -87,7 +87,8 @@ extension ListViewController: UICollectionViewDelegate {
         let animation = animations[indexPath.row]
         switch animation.presenter {
         case .base:
-            print(animation)
+            let buttonViewController = ButtonViewController(animationInfo: animation)
+            self.navigationController?.pushViewController(buttonViewController, animated: true)
         case .slider:
             let sliderViewController = SliderViewController(animation: animation)
             self.navigationController?.pushViewController(sliderViewController, animated: true)
