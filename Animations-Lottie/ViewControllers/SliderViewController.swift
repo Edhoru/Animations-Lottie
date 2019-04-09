@@ -9,7 +9,7 @@
 import UIKit
 import Lottie
 
-class SliderViewController: UIViewController {
+class SliderViewController: AnimationViewController {
     
     enum States: String {
         case great
@@ -36,11 +36,7 @@ class SliderViewController: UIViewController {
         }
     }
     
-    //Properties
-    var animation: AnimationInfo
-    
     //UI
-    var animationView: AnimationView!
     var titleLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -68,16 +64,6 @@ class SliderViewController: UIViewController {
     }()
     
     
-    init(animation: AnimationInfo) {
-        self.animation = animation
-        
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -92,7 +78,6 @@ class SliderViewController: UIViewController {
         view.backgroundColor = .white
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
         
-        animationView = AnimationView(name: animation.file)
         animationView.currentTime = (animationView.animation?.duration ?? 0) / 2
         animationView.translatesAutoresizingMaskIntoConstraints = false        
         

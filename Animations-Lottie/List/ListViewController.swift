@@ -90,7 +90,7 @@ extension ListViewController: UICollectionViewDelegate {
             let buttonViewController = ButtonViewController(animationInfo: animation)
             self.navigationController?.pushViewController(buttonViewController, animated: true)
         case .slider:
-            let sliderViewController = SliderViewController(animation: animation)
+            let sliderViewController = SliderViewController(animationInfo: animation)
             self.navigationController?.pushViewController(sliderViewController, animated: true)
         }
     }
